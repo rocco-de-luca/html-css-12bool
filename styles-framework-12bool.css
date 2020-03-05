@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  border-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container{
+  width: 1170px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.container::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+
+/* Columns Style*/
+[class^="col-"]{
+  float: left;
+  padding: 1px;
+  background: pink;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+/* columns dimension */
+.col-1{
+  width: calc(100% / 12);
+}
+
+.col-3{
+  width: calc((100% / 12) * 3);
+  /*width: 25%;*/
+}
+
+.col-5{
+  width: calc((100% / 12) * 5);
+}
+
+.col-7{
+  width: calc((100% / 12) * 7);
+}
+
+.col-9{
+  width: calc((100% / 12) * 9);
+}
+
+.col-11{
+  width: calc((100% / 12) * 11);
+}
+
+.col-2{
+  width: calc((100% / 12) * 2);
+}
+
+.col-4{
+  width: calc((100% / 12) * 4);
+}
+
+.col-6{
+  /*width: 50%;*/
+  width: calc((100% / 12) * 6);
+}
+
+.col-8 {
+  width: calc((100% / 12) * 8);
+}
+
+.col-10{
+  width: calc((100% / 12) * 10);
+}
+
+.col-12{
+  width: 100%;
+}
+
+.grid-container {
+  width: 1170px;
+  max-width: 100%;
+  margin: 0 auto;
+  }
+
+  .grid-container::after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+
+
+[class^="box-header"]{
+  float: left;
+  padding: 1px;
+  background: grey;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+
+.box-header{
+  width: calc((100% / 12) * 10);
+height: 159px;
+  margin-top: 20px;
+  background-color: red
+}
+
+[class^="box-sidebar"]{
+  float: left;
+  padding: 1px;
+  background: grey;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.box-sidebar {
+    width: calc((100% / 12) * 2);
+height: 318px;
+    margin-top: 20px;
+    background-color:blue;
+
+  }
+
+  [class^="box-main"]{
+    float: left;
+    padding: 1px;
+    background: grey;
+    border: 1px solid #000;
+    text-align: center;
+
+  }
+
+  .box-main{
+    width: calc((100% / 12) * 8);
+height: 318px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background: yellow
+  }
+
+  [class^="box-footer"]{
+    float: left;
+    padding: 1px;
+    background: grey;
+    border: 1px solid #000;
+    text-align: center;
+  }
+
+  .box-footer {
+  width: calc((100% / 12) * 10);
+height: 159px;
+  margin-top: 20px;
+  background-color: green;
+  }
