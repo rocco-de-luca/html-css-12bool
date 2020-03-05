@@ -13,20 +13,64 @@ h2 {
   margin-top: 30px;
 }
 
+.grid-container::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+
 [class^="box-header"]{
-  float: left;
-  padding: 1px;
-  background: grey;
-  border: 1px solid #000;
-  text-align: center;
+float: left;
+padding: 1px;
+background: grey;
+border: 1px solid #000;
+text-align: center;
 }
 
 
 .box-header{
-  width: 100%;
+width: calc((100% / 12) * 10);
+height: 159px;
+margin-top: 20px;
+background-color: red
 }
 
 [class^="box-sidebar"]{
+float: left;
+padding: 1px;
+background: grey;
+border: 1px solid #000;
+text-align: center;
+}
+
+.box-sidebar {
+  width: calc((100% / 12) * 2);
+height: 318px;
+  margin-top: 20px;
+  background-color:blue;
+
+}
+
+[class^="box-main"]{
+  float: left;
+  padding: 1px;
+  background: grey;
+  border: 1px solid #000;
+  text-align: center;
+
+}
+
+.box-main{
+  width: calc((100% / 12) * 8);
+height: 318px;
+  margin-top: 20px;
+  margin-left: 20px;
+  background: yellow
+}
+
+[class^="box-footer"]{
   float: left;
   padding: 1px;
   background: grey;
@@ -34,30 +78,9 @@ h2 {
   text-align: center;
 }
 
-.box-sidebar {
-    width: calc((100% / 12) * 4);
-  }
-
-  [class^="box-main"]{
-    float: left;
-    padding: 1px;
-    background: grey;
-    border: 1px solid #000;
-    text-align: center;
-  }
-
-  .box-main{
-    width: calc((100% / 12) * 8);
-  }
-
-  [class^="box-footer"]{
-    float: left;
-    padding: 1px;
-    background: grey;
-    border: 1px solid #000;
-    text-align: center;
-  }
-
-  .box-footer {
-    width: 100%;
-  }
+.box-footer {
+width: calc((100% / 12) * 10);
+height: 159px;
+margin-top: 20px;
+background-color: green;
+}
